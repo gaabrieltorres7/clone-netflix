@@ -1,0 +1,146 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Elements*/
+
+body {
+  background: var(--preta);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode";
+  color: white;
+}
+
+header nav li {
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Main Tv Show */
+
+.main-animes {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/clone-netflix/img/big-naruto.webp");
+
+  height: 600px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-animes .description {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.main-animes .title {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode";
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 50%);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button i {
+  margin-right: 6px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.main-animes .container {
+  width: 70%;
+}
+
+.box-anime {
+  height: 500px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.carrossel-animes .box-anime:hover {
+  border: 4px solid #aaa;
+}
+
+.carrossel-animes {
+  margin-top: 5px;
+}
+
+footer {
+  height: 6vh;
+  font-size: 13px;
+  color: #757575;
+  text-align: center;
+  line-height: 6vh;
+}
+
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    margin-top: 5px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .description {
+    width: 50%;
+  }
+}
